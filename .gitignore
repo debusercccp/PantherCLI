@@ -1,0 +1,19 @@
+# Ambienti virtuali
+.venv/
+.venv_gpu/
+venv/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Modelli e Dati (Troppo pesanti per GitHub)
+*.pth
+*.npy
+*.csv
+*.fasta
+
+# OS files
+.DS_Store
+thumbs.db
