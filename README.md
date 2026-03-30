@@ -75,7 +75,7 @@ Copia `best_panther_model_pro.pth` e `classes_pro.npy` nella root del progetto (
 
 ---
 
-## ▶️ Utilizzo
+##  Utilizzo
 
 ### Avvio base
 
