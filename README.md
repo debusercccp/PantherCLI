@@ -37,7 +37,7 @@ Il modello è addestrato sull'ultima release di PANTHER, coprendo migliaia di fa
 
 ```
 panther/
-├── panther_tui.py          # Interfaccia TUI (Textual)
+├── panther_cli.py          # Interfaccia TUI (Textual)
 ├── model.py                # Architettura, feature extraction, inferenza
 ├── build_csv.py            # Generazione dataset da file FASTA
 ├── best_panther_model_pro.pth  # Pesi del modello (da caricare manualmente)
@@ -52,8 +52,8 @@ panther/
 ### 1. Clona il repository
 
 ```bash
-git clone https://github.com/tuousername/panther-classifier.git
-cd panther-classifier
+git clone https://github.com/debusercccp/PantherCLI.git
+cd PantherCLI
 ```
 
 ### 2. Crea l'ambiente virtuale
@@ -80,13 +80,13 @@ Copia `best_panther_model_pro.pth` e `classes_pro.npy` nella root del progetto (
 ### Avvio base
 
 ```bash
-python3 panther_tui.py
+python3 pantherCLI.py
 ```
 
 ### Con percorsi personalizzati
 
 ```bash
-python3 panther_tui.py --weights /path/to/model.pth --classes /path/to/classes.npy
+python3 pantherCLI.py --weights /path/to/model.pth --classes /path/to/classes.npy
 ```
 
 ### Nell'interfaccia
@@ -96,6 +96,26 @@ python3 panther_tui.py --weights /path/to/model.pth --classes /path/to/classes.n
 3. Vengono mostrate le **Top 5 famiglie PANTHER** con probabilità e barra visiva.
 
 ---
+
+### Utilizo
+1. Modo interattivo:
+   
+```Bash
+python3 pantherCLI.py
+```
+  Ti chiederà di incollare la sequenza e poi mostrerà la tabella.
+
+2. Modo "veloce" (passando la sequenza come argomento):
+   
+```Bash
+python3 pantherCLI.py MKVLVVLLS
+```
+3. Pipe (da un file):
+  Se hai un file FASTA e vuoi processarlo al volo:
+
+```Bash
+cat proteina.fasta | xargs python3 panther_cli.py
+```
 
 ##  requirements.txt
 
