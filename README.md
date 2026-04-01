@@ -92,8 +92,7 @@ python3 pantherCLI.py --weights /path/to/model.pth --classes /path/to/classes.np
 ### Nell'interfaccia
 
 1. Incolla la sequenza proteica (formato raw o FASTA — l'header `>` viene ignorato automaticamente).
-2. Premi **Predici Famiglia** oppure **Invio**.
-3. Vengono mostrate le **Top 5 famiglie PANTHER** con probabilità e barra visiva.
+2. Vengono mostrate le **Top 5 famiglie PANTHER** con probabilità e barra visiva.
 
 ---
 
