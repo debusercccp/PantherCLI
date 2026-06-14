@@ -46,7 +46,7 @@ def batch_inference(input_csv, output_csv):
 
     # 3. Preparazione Modello
     model = get_model(input_dim, num_classes)
-    model.load_state_dict(torch.load(model_path, map_location=device))
+    model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
     model.eval()
 
     # 4. Predizione a blocchi (per non saturare la RAM)

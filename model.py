@@ -32,7 +32,7 @@ def extract_features(sequence: str) -> list[float]:
     """
     Estrae 21 feature da una sequenza proteica:
     - Frequenza relativa di ciascuno dei 20 amminoacidi standard
-    - Lunghezza della sequenza (normalizzata)
+    - Lunghezza della sequenza (valore grezzo)
     """
     if not sequence:
         return [0.0] * INPUT_DIM
