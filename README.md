@@ -19,14 +19,14 @@ Il classificatore e un MLP a tre strati nascosti con regolarizzazione:
 **Feature di input (21):** frequenza relativa dei 20 amminoacidi standard + lunghezza della sequenza.
 **Accuratezza:** ~56.46% su oltre 15.000 classi PANTHER.
 
-> Il modello e addestrato su singole sequenze proteiche. Passare file FASTA multi-sequenza
+> Il modello è addestrato su singole sequenze proteiche. Passare file FASTA multi-sequenza
 > senza `--first` concatena tutte le sequenze in una sola, producendo risultati non significativi.
 
 ---
 
 ## Modello Pre-addestrato (Non Incluso)
 
-Il file `best_panther_model_pro.pth` contiene i pesi di un modello pre-addestrato proprietario e **non e distribuito in questo repository**.
+Il file `best_panther_model_pro.pth` contiene i pesi di un modello pre-addestrato proprietario e **non è distribuito in questo repository**.
 
 I pesi sono stati ottenuti tramite un training personalizzato su dati PANTHER e sono disponibili solo privatamente. Per addestrare un proprio modello da zero, utilizzare lo script `trainer_panther_GPU_FINALE.py`.
 
