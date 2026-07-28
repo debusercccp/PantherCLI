@@ -56,8 +56,8 @@ PantherCLI/
 ├── trainer_panther_GPU_FINALE.py   # Script di training
 ├── best_panther_model_pro.pth      # Pesi del modello (non inclusi, solo privati)
 ├── classes_pro.npy                 # Mappa indice -> famiglia PANTHER
-├── requirements.txt                # Dipendenze Python
-└── NOTICE                          # Note sulla proprieta del modello
+└── requirements.txt                # Dipendenze Python
+
 ```
 
 ---
