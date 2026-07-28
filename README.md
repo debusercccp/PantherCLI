@@ -6,7 +6,7 @@ Classificatore automatico di proteine nelle famiglie del database **PANTHER**, a
 
 ## Il Modello
 
-Il classificatore e un MLP a tre strati nascosti con regolarizzazione:
+Il classificatore è un MLP a tre strati nascosti con regolarizzazione:
 
 | Layer    | Neuroni    | Attivazione                               |
 |----------|------------|-------------------------------------------|
@@ -36,13 +36,13 @@ Per ottenere i pesi pre-addestrati, contattare direttamente l'autore.
 
 ## Il Database PANTHER
 
-**PANTHER (Protein ANalysis THrough Evolutionary Relationships)** e un sistema di classificazione su larga scala che raggruppa le proteine in base a:
+**PANTHER (Protein ANalysis THrough Evolutionary Relationships)** è un sistema di classificazione su larga scala che raggruppa le proteine in base a:
 
 - **Relazioni evolutive** — analisi dei geni ancestrali comuni tra organismi.
 - **Funzione molecolare** — i membri di una stessa famiglia condividono spesso attivita molecolari simili.
 - **Ontologia genica** — collegamento diretto con Gene Ontology (GO).
 
-Il modello e addestrato sull'ultima release di PANTHER, coprendo migliaia di famiglie proteiche attraverso svariati organismi.
+Il modello è addestrato sull'ultima release di PANTHER, coprendo migliaia di famiglie proteiche attraverso svariati organismi.
 
 ---
 
